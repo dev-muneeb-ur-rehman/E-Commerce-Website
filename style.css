@@ -1,0 +1,33 @@
+#search1 {
+    background-color: green;
+    color: whitesmoke;
+}
+
+#eco01 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    color: forestgreen;
+}
+
+#eco02 {
+    color: forestgreen;
+}
+
+#text01 {
+    text-align: center;
+}
+
+#buy01 {
+    background-color: forestgreen;
+}
+
+.card{
+    display: inline-block;
+}
+
+.maincard{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}

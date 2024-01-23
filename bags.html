@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecoic Bags</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- </p>This is a nav-bar <p> -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="https://cdn0.iconfinder.com/data/icons/free-social-media-set/24/envato-512.png" height="50px" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="web.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Items
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="decors.html">Handmade Home Decors</a></li>
+                      <li><a class="dropdown-item" href="bags.html">Eco-Friendly Bags</a></li>
+                      <li><a class="dropdown-item" href="utensils.html">Kitchen Utensils</a></li>
+                    </ul>
+                  </li>
+                  <form class="d-flex" role="search" style="margin-left: 800px;">
+                    <input class="form-control me-2" type="search" placeholder="What do you want?" aria-label="Search">
+                    <button id="search1" class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+              </div>
+            </div>
+          </nav>
+          <br><br><br>
+          <!-- <p>Product Container</p> -->
+          <div class="container product-container">
+        <div class="row">
+            <div class="col-lg-6">
+                <img height="260px" width="400px" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUWFRgVFRUYGBgaGhoZGBgaGBgYGBgYGhwaGhocGRweIS4lHB4rHxgZJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHhISHjQrIys0NDQxNDQ0NDE0NDQ0PTU0NDQ0NDQ0NjQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAMYA/wMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAAAQIEBQYDB//EAEQQAAIBAgIGBwUGBAQFBQAAAAECAAMRBCEFEjFBUWEGEyJxgZGxMqHB0fAjQmJygrJSkqLhBxQzY1NzwtLxFRYkQ5P/xAAZAQADAQEBAAAAAAAAAAAAAAAAAQIDBAX/xAApEQACAgIBAwMDBQEAAAAAAAAAAQIRAzEhBBJBImGRMlFxExShscGB/9oADAMBAAIRAxEAPwD19EFhkI7UHAQQZDujrQATUHAQ1BwEdaLABuoOAhqDgPKOhABuoOA8oag4DyjoQGN1BwETUHAR8SAhuqOAhqjgI6JAY3UHARNUcBHxIAN1RwETVHAR8bABuqOENUcIsDABhUcBEKjhHmNMAGao4RCo4RzEDabd+UgYnS1JPvax4Ln79klyS2xpN6JhUcIhUSroafpMbG6+/wBM5ZJUVgGUgg7CIoyi9MHFrYhAjSJ0MYZYjmRGkR5jDABhEYY8xhgAwxpj2jDADRIMh3R0amwd0fAQkWEIAESLCACQiwgAkIsIAJEiwgMbCLEgAhhCEAGxIpiGACSl6U6Z/wAtQLgAuzKiA7NZt55AAnwl1M10l0L/AJuth0Y/ZoXqVBs1hkFUd592tykTb7eNjjV8nm+MxVevVprUqOzVWXVuSFs7aoIUfdvfyM9ewWjqdJFpoi6qgDMC54k8Sds82xxDaZQWAVKtJFAyAVAoAA3CeqTPDFKzTI9FRpXQqVVNgEf7rLlnMbovTlTDOUcEgNZxxF7Ejgwno5mD6V6PDVXIHasG8GA+IMnLFRqUQxvuuLNurggEG4IBB4g5gxDKTodii+GQN7VMtTP6dn9JA8JdmdEXaszap0MMYY8xhjEMM5tOjTm0AGmczHmMMANImwd0fGIch3R14CFhEiwAIQhAAhCEACES8IABhCJAAgYl4QGJEJizD9LukTJXWghyUa1S28kdlfj5SMk1CNsqMXJ0aevpNVNlVm7svK+2OwukUc2Bs38JyPhxlNonQCsq1KruxZQ2qDqhdYA2Nsyc+I7oaV0LYFqbEWzFzcqR+LaV78wbTLuyJdzXH2LqD4WzSGQaRvWfkoHp/eRejekmrIwcWem2o/Pg3j8J10cdZnbiR7yT8pbkm1XklRq7PMqj20uzHdih5awE9cM8g0/SK6QrkbdcOO8hWHrPW6VUMquNjAMO4i/xk4X6pL3HkXCYpma0ug61ydpCDwAv6maUmZzSg+2fL+HP9Ih1H0r8jw7Do1S1GqJucJVXx1kceDIPMS9Mz719T/Kvsu7025pUe1jyDarfpmgMvG120RNc2MaNMcxjGmhIxpzaPYxjQAYYwxxjCYAaNGyHdHa05IchFBgI63heRHx1NTql0B4awvnynGppiguRceR+UlzitspRf2LG8W8oK3SigpsFqMfwoSPPZGf+51OyhVP/AOY9XkvNBeRrHL7GivC8y2K6TPqNqUbPlqh2XVPG5UkjyO2WOhdJNWS7qqOPaVWZ1AN9UhmVb7M8olmjJ0mDxyStot4XmFXprULOuonYZl2NnYkX9qJW6T1ybjVXdYAkb889p7+El9TBFLDJm7nHEYhUXWY2GQ8TkABvN90w2M01XNiKjLY09YLZcqiaw2c1Y/r5CQ8Ri3LAs7mxvm52iZy6pLSKjgb2z0Crj6amzuqHg7BbjiLyFX6SYVNtZTyW7egtMVpljXweuSS9CrbWJJJR9msTtzNvATKUasUuofFIccK8s9RqdMKJICK7EkAXAUXOy+d7TIONeo9Vvacs+zYCTq+SlfKRNHPck/wI7+IUhf6iJc4mmFZidgBsP5TMJ5JT2bRhGOjZUNIIKKspuQiHVJsSNUWHf3XnBtMK6lSrKSOWqN+3b7pAw62VBY5Ig90DRDNa2249x28ZbzyfCIWKK5DR9YU6tQ52dcubC2qfWSdF4pE1w5tmDsJ48BK/S6lGRr7HztwIZB72WVOIq1i90KalgLdoNcbb2Ft/ukrI4te3+ldikn7lX0xJbGM9IhkdEJYZWYDVINxwUHxm76M4lWw9JS6l1XVI1gWyJAuNuwCYrHI4PZTWuM7EG38xBvOeCwrbWS23I2O/LIQjmcZOVbFLGnFRs9OMz2kl+1c/l/aJBw+Jdcld17j8Gy906itrm7uL772Hul5M6nGqFHE4uyH0jJGEpsN1Rx4lmt6TWYerrojj7yq38wB+MxWntI3w/VBRbWJ1tYZ5sdnefdLLotpVOoWmzHWS67CRa5K5i+wEDwl4skVLfhfJE4Pt/wCs0bGMJjFrq3ssD3GIzTrTvRgBMYxgTGExgDGcyYrGNvADQpsEcIxDkI4GAHnNeqf/AFCoRuamOVxa/rJKVbMx3Wt+nXc/GRqpP+bqN/uelvlFObst+X9RnkN8s70uEdX9gd953w1Q74ClkMzOlKmBaIYhFyduXzEtNBVbM53CmSfC0rb28ZNwWSVm/wBu38xt8JePiSIn9LMI6EOx4m58TJWIrWXnfLxynTGjtm0jVF1ha/dymUm64LSV8nRMars6i4u6EDglNCieOeY5TvimsBK3B4NlfWJv6e+WGIGQvEm2uSmknxotdG0dbCYtdvZRvEFj8JjWSxnoGhMORRrqw1GdQFDCxIGsL2OZALCZzG9HK9+yFYbrMB62mzXpRktsj4JrYeo/8bpTHhd29FknSGKd6ltxIHmoiY7APSw1BWQhteo7jba+qFuRcbBI5ftIxGXZz7go+EiXBa5PQqSC5HCy+Q/vObgBgRxnVBmx4k/L4TmRdhLJIemtlzuDHyKn4SsqgDZeWmmjfWH4Gt43+UqKT66I3FQc+Nh8ZMtlR0BWNVDx+M6W7jGgbcrSChdVjvtHo7DaAfGM6z6vH02jJFS59oW25STTsNlvK0ZTOez6z+UlJTG/3HlKQmC0wcyB8Y8BgwsWtwuSL3HHlHin3+6IU8Zom1ohpPZV6H0s9SrXptb7NyoIFiQNXM+Z8pcM0xHRet/8zEDczVCP5iflNkTO3DJyjyc2RVIUtG62cYTG62c2INSmwRwjE2COEAPOa+eJrW/4jR//ANz/AJm/dff3xEW+IrHi7+tvhHOPtT4++x+M8byz0PCLFl7McgGUaV7ME2ZHfGAWucvr6vJdA/YVuYQf1GRW2+UlYc/YVx+X4ysf1fJM9fBkMa3aPeZwQx+JNzG01+vKZlE1Bs7o2st9UcxFUR20oPxL6xFGzoga7eF8t13t6AeE6PSQ8Rfnl/ac8MO235Uz8XknI+k6FoxZxqKdYWIsARa1ttuHymb0noes7lhTQ5/dcDzvbvO3xmr1AN0NWEo3sFKtFfg0cAK9/IfDKS0pZ3vedGS++NFM784JUDZX6QosSz3FtmZO7LhxvM5o6tq61Nj7LEqc81Y3Gy+8zX6msCrL2dlveZGw2jKKEsiWLW1jdvu3tY3Nh2jkOJkONuy1KlRVf5ckXC3B5TiaTD7pHgZY6YrdQA2sSrNYA919u+QhjlYNntUjbE4pDs46ue/3R9NeIiI/OdFqxUB3pkfVjJCndyMr1rZ3+vCSKdUZD6zMaYiwQ5xuKq6qMx3KT5C8Sk2WUh6de1BxxAXzIHoZpfBBi+i5tixf7wYf0mb1pgdD9nFIfxAeeXxm/YTq6Z+lmGbaObRg2x7CM3zoMjVJsjhGpsEeI2Bg8FT1qlU/7j38zOdcfanw/apk3Rq9qoPxt+4yNik+2/l/ZPGo7ybkF5xuHa625xF9nbDCtkYxj6oz+uMk6NF1qrxVT5Mf+6cMQNkTR9YLUBb2WGq3cwt62PhHF1JCkriY6uCHIO428p3RZbdJNFtrM6DWIPbUbQePjt8ZUYYHhJnGnQ4u0d0BnXDITUQDMl1y/VHUaDMwVVJPAZmXWAwi0HUsQ1Z7KqCxFNT7TE7za/KEY2DdFxgBmTyUe4n4ySByykbAAWbvH7V+clW+t06I6MmMcbLHhHMDf65ym6RaXFFAFI6xvZG3VGwsfh/YzF0tK11N1rPc7bsW9xymOTMovtZy5eqjCVVZ6cvxjrTD4TpTXUXfVcbuzZ2PeLADnbzzl1orpMlZgjIUc+znrBuWtYWPhKjmjKlY4dVjk60/cvibRureLrA5cotpozpRjv8AEIkJTP8AuH9sy2FxRuv1ums/xAW9JP8Amf8AQZhwbWtxmUlyWtGgOLIy745MXnKirU7RirVmZRfU8VJmGqCZyliM5a4ap8I7Avqb5fXdIXSF/swOLjyUE+tp1w9T4Sv089yi8mJ3bSB8DLTJZQURq10PNT/UJ6C4nn+IWzqeF56Be4B4gGdXTPZhmWji85jbOrCM1c51mJp12CdBGoMhOgEbEYvRx+0f87fuMbjP9Xy/bFwxtVcf7jfuMdpIdsHkPS3xnjneMGyOwg2/W+NE7YZbG8EM61xn5+6QKm+T65lcxuYmNEvGa70xVRtWogCvxZfuk7jzlcuKBN3pITxHZvvzFjJdGuytrL3EHYRwIjytB+1dk3lSLi/Ij4y77vPJNURKmk3tq0lCa25R2ififCWOjsOKFtc61aplbaUU7bn+I/W+c1xCUh9kvbP3mzNtmX0JFwbs1UEm5NySe4wuvNv+gq/waPBDJubf9K/KcqulKKtqO2o34xqgi+0MeyR4zrgth/MfQTAad0m1eoWOSKSEXgOJ5m3oN0MmTsjZx9TleNJrZY9JtFMWbEI/WIfasQxTuttT038ZUaK0e1dwi5DazblX57h/5lh0RxWpWKH2agt+oZjzFx4zY4XBJT1hTUKGYsbccvIcphDGsr7vlHJjwrM+/SvlGb6WaLVKdN0WwT7M24G5Uk9+tc8WmYRypDKbEEEHgRmPeJ6Tj9GJWWz63g7KO+wNvMSixPRmgjK71iqbWVyufIMLekeXC+7uiGfp3390UqLrQ+kHrLrlNRLWUk3LneQNy3vxvytLJTKzAaXo1GKUm9lRYAFV1QQOzfcMt0sxsnTF2t2d+N3Hd+5mOnn+in/MH7TMARPQOnI+xX84/aZgSsiWzdaGYqrZyOS/tE5itI+lGs/eqnyy+EjrVk0VZb4apeXeEeZvA1JfYNvrykMo0OGb1lfpNr1LcAB7r/GTMM2X1xkLEC7uefpl8JoiWQMRS2HgZssG96aH8K+kymIX1E0+jGvSTxHvM6emfqa9jDMuCQYzfBjGa2c7TnNci5COAioMhHWjEYOqbV3H4z+4yRpAdoHiF9RImNe9eoFH32z/AFGTNJDNPyp+6eO9s9BaRxtt+t86UNhnNjHUTmRzgA7EN6f3kRFznau27viIImNClZyRPSSSIwmIYnVZbY/BoA48fQzmauRjsA13W/A+hgtg9F7g9h/MZguk2C6vEMAMn7a/q2gfqvl3Tf4M9nZvb9x+Up+luG1qPWAdqncgjbqsQreQzl5YKUPwef1cO+DflckXo/oimKd2KvUaxurAmnqm6gEbCCM/KaRRv2++eUI1jcZEbxkZpeimkaz11RqjMmqxKt2r2FhmRcZkb5nhzLiKVHNg6iKqNexs2tML0xwepWDjZUF+NmWwI9D4mWmmOkqpVVEuyIftCCO0bEaoPAHM8SLd8bTWl8PiKOqCyupDIHXaRtGsLjME7TwlZpRlFq+UadRkxzi43yih0Vi+qrI+4NZvyHJu/I38J6cvIzzDBaOeq4RQM99xYDeeYHKemUaYCqoNwBYE7bAWB78oumUkmnoXQuVP7Ge6aj7JePWD9hmFdJu+mY+yvwqL6GYsUyQe4zR7PSWik0yO0h/AP3P85Xgy00utwh5MPIg/GVeqYDLLALNBgxKXAJlL3CiZMpF1hr5Du3yCXuzHmT75Pw9gL8AT5C8p8O3OWhM61RNJoTOkORI9D8ZnDneaPo4bow/F6gfKb9O/WZZV6SW6Tjq5ya6yOUznoHKa1BkO6OtETYO4RKi3BANiRt4RiMFTGtiXAz7bn+qTNNLq6h5HZyzlpS0SKN9Qe0bswG089p8zK3TZ7CnmV8wPlPKlBxu9ncpqVURNYRoq7ec4ICw8pIGHMyNDk1S8OstykhMMWyUG/AXJkyloGo20W5k2PkJUYSlpEuUVtlTUxW4AnwjVLvfKwPHbvmqw/R5RmzX5DIee2WdDA009lQOe0+Zm0elnLfBnLPFa5MlhdFVGFgpz3nIe+WdLQ5p9tiLjKw55bZohImk/Y8RNn00YRb2zL9eUnRAww7I7297GdWQEEEXBFiNoIO2/GMw3srzAPu/vOlpktFszOL6H02JNN2p/hIDKO7ePMw0B0fehWZ3KMpRlBUm9yV2i2WQM00S2eUz/AEYJ2lyYftsdppUeW6TwnVVXpnYrWB4rtU99iJwoUmdgiAszGygbzPUmwaF2cgEsioQQCCFJI2/mMZQ0fSRtZKaKxyuFAPOYPpbld8HL+yd8Pi/4IuhNFLh0tkXb224m2wch/eWKnLKOiWnUkoqkehCCglFaM90vW9K/40+MyurZOFxNZ0m/0z+ZJlq43TN7Nloz+mF7FPvce5JVqJd6Wp/Zpyc+8f2lMq5iSxlxglyEucKPl7pW4JNkucMkgonHKmx/CR55fGUmoRmPrul1jMqZ56o99/hKdGPlKrgkVMSNhyM1PRQ3Di98wfUTHVaWvbI33WuDeazobgalOo6vrZqcipGrmtrnZfMzbBamjPJ9LNA9ON6iWq0IPQynpHGTE2DuEfGJsHcI+MQkq9KaP1kYoBr2JW+Q1rG3dLSEmUFJUxxk4u0Z3CaAZQAWAsADYXvl4Syo6KprtBJ5n5SwhIjhhHSKeWT8jEpgZAAdwtHxYk1ICEIQAJW6VLWUKpOd9mQtxPjLKIZMo9yoadOykRwBb6ynRTfy+s5Y1MMrbQO/fIz6P4N4HOcssMlrk3WSLOAheI+HqLuuOU5GpuIImbTWy1T0dSIvGc1fnHa2cQxwjWGUXWgRADP9KGtSY5ZFfUTIrUvYnLlNb0s/0Xz3p37f/ExzN2NbeL+76Exls0WiDp17URb/AInuKvKXDVAWFxPRf8PiKlSqrqGVkJswDK1mXLMWO2aXF9B8E5LCl1bHfTJT+nNfdNo4XKNozeRRdM87wYBGRl1hKct6vQUpnSqBuCsLHzGR8hI50VWp5MrD3r/MLzKWKcdouOSMtMg6YqaqKL7W/aLerTjoXR1TEPZF7A9pz7I+Z5TQ4Ho8uIKvVvqKLKgy1mJuxJ3DYPAzXYbCpTUKihVGwAWAm2PA5cvRnPKlwtlXorQFKjmo1m/ia1x+XhLhUnS0LTtjFRVI5nJvY3VjagnSNfZLECbB3CPjE2DuEfAQQhCABCEIAEIQgAkIQgAQhCABCEIAJGvTB2gHvj4RNWMgVNHqcwSPeJwfCOuY7XdtltCZyxRfsWskkULORkQQeBEb1nOXjIDtA8ZHfAId1u75TGWBrTNFlXkxHTKuRTVQCS9RFAGZJsTYAbdnvnPQXQ2oy3xHYBsdQZt48O6bXDaJRW1j2mF9Ukezfbbnz5CWIih098y+Alm8RK7AaIo0bdWgUhQoO+3Pmd5ljaLCdUYqKpGDbexYkWEoQgEWEIAEIQgARlTZHznU2QAalQWG3ZF60c4QgAdaOcOtHOEIAL1oh1ohCAB1oidaOcIQAOtHOHWjnCEADrRzh1o5whAA60c4daOcIQAOtHOHWjnCEADrRzh1o5whAA60c4daOcIQAOtHOL1ohCAB1oh1ohCAB1oh1ohCAB1oh1ohCAB1oh1ohCAB1ojKlUc4QgB//9k=" alt="Product Image" class="product-image">
+            </div>
+            <div class="col-lg-6">
+                <h2>Nature Lovers Bags</h2>
+                <p>Introducing Our Premium Eco-Friendly Bags
+<br>
+                    Embrace sustainability with our eco-friendly bags, thoughtfully designed to make a positive impact on the planet. Crafted with care and consideration for both style and the environment, these bags are the perfect companions for your conscious lifestyle.</p>
+                <p><strong>Price:</strong> $2.99</p>
+                <button class="btn btn-primary">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+     <!-- Footer -->
+     <footer class="bg-light text-center py-3">
+        <p>&copy; 2024 Eco-Elegance</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Elegance</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- </p>This is a nav-bar <p> -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="https://cdn0.iconfinder.com/data/icons/free-social-media-set/24/envato-512.png" height="50px" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Items
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="decors.html">Handmade Home Decors</a></li>
+                <li><a class="dropdown-item" href="bags.html">Eco-Friendly Bags</a></li>
+                <li><a class="dropdown-item" href="utensils.html">Kitchen Utensils</a></li>
+              </ul>
+            </li>
+            
+          
+          <form class="d-flex" role="search" style="margin-left: 800px;">
+            <input class="form-control me-2" type="search" placeholder="What do you want?" aria-label="Search">
+            <button id="search1" class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- <p>This is a slider.</p> -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://olabamboo.com/wp-content/uploads/2021/08/Olabamboo-header-optimized-final.jpg" height="500px" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.sanity.io/images/tbvc1g2x/production/25b99ddabe34f4cc08c917b5c78c48e410a2dec3-2400x1296.jpg?w=2400&h=1296&auto=format" height="500px" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.switch-asia.eu/site/assets/files/2624/resizes/screen_shot_2563-10-15_at_14_33_42.png" height="500px" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <br><br>
+    <!-- <p>Text Area.</p> -->
+    <div id="text01">
+      <h2>Welcome to <strong id="eco01">Eco-Elegance,</strong></h2>
+      <h5>"Sustainability Redefined, Passion for the Planet."</h5>
+      <h5 id="eco02">"Join the Green Revolution, Inspire the World,Revolutionize Your Wardrobe, Revitalize the Earth."</h5>
+    <br><br>
+    </div>
+    <!-- <p>Cards here.</p> -->
+    <div class="maincard">
+    <div class="card" style="width: 18rem;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-pRZMEoZ0jNv4epQcR84bfTkvI6gjbZTA3g&usqp=CAU" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hand-stiched Bags</h5>
+        <p class="card-text">"Crafted with Care, Worn with Pride: Your Journey, Our Hand-Stitched Guide."</p>
+        <a href="#" class="btn btn-primary" id="buy01">Buy Now</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hand-made Home Decors</h5>
+        <p class="card-text">"Transforming Houses into Homes: Artisanal Elegance, Handcrafted Excellence."</p>
+        <a href="#" class="btn btn-primary" id="buy01">Buy Now</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://amnaturalliving.co.uk/wp-content/uploads/2021/02/AM-Natural-Living-7pc-Kitchen-Utensil-Set-New-With-Chopping-Boards-And-Info.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Eco-Friendly Kitchen Utensils</h5>
+        <p class="card-text">"Elevate Your Culinary Experience: Where Every Dish Begins with Quality Craftsmanship."</p>
+        <a href="#" class="btn btn-primary" id="buy01">Buy Now</a>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <!-- <p>Comment Section</p> -->
+<div class="container">
+  <h1 class="text-center">Customer Reviews</h1>
+
+  <div class="row">
+      <div class="col-md-6 offset-md-3">
+          <!-- Review 1 -->
+          <div class="review">
+              <div class="review-author">Mirza Navaid</div>
+              <div class="review-rating">★★★★★</div>
+              <div class="review-text">
+                "I absolutely love the eco-friendly products from Eco-Elegance! Not only are they stylish and functional, but it feels great knowing that I'm making a positive impact on the environment with my purchase. Highly recommended!"
+              </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="review">
+              <div class="review-author">Erfan Aly</div>
+              <div class="review-rating">★★★★☆</div>
+              <div class="review-text">
+                "The sustainable materials used in Eco-Elegance's products are top-notch. From reusable water bottles to eco-friendly home goods, I've found everything I need to live a more environmentally conscious lifestyle. Excellent quality and a clear commitment to sustainability."
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+  <!-- <p>footer here.</p> -->
+  <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-5">
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-white"
+          style="background-color: lightgreen"
+          >
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h3 class="text-uppercase mb-4 font-weight-bold">
+              Eco-Elegance
+            </h3>
+            <img src="stamp.png" alt="">
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+            <p>
+              <a class="text-white">Hand-made Home Decors</a>
+            </p>
+            <p>
+              <a class="text-white">Eco-Friendly Bags</a>
+            </p>
+            <p>
+              <a class="text-white">Kitchen Utensils</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+            <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/login/"><img height="30px" src="https://cdn.freebiesupply.com/logos/large/2x/facebook-logo-2019.svg" alt="">Facebook Page</a>
+            <br><br>
+
+            <!-- Twitter -->
+            <a href="https://twitter.com/login"><img height="30px" src="https://cdn.freebiesupply.com/logos/large/2x/twitter-3-logo-png-transparent.png" alt="">Twitter Page</a>
+            <br><br>
+
+            <!-- Google -->
+            <a href="https://www.google.com/"><img height="30px" src="https://companieslogo.com/img/orig/GOOG-0ed88f7c.png?t=1633218227" alt="">Search</a>
+            <br><br>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/accounts/login/"><img height="30px" src="https://www.svgrepo.com/show/157806/instagram.svg" alt="">Insta Page</a>
+            <br><br>
+
+            <!-- Linkedin -->
+            <!-- <a href="https://www.linkedin.com/login"><img height="30px" src="hhttps://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" alt=""></a> -->
+            <!-- Github -->
+            <a href="https://github.com/login"><img height="30px" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="">Git-Hub</a>
+            
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2020 Copyright:
+      <a class="text-white" href="web.html"
+         >EcoElegance.com</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- End of .container -->
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
